@@ -1,0 +1,53 @@
+</html>
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+  <meta charset=”UTF-8”>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+  <title>Muchuks Concept – Borrower Form</title>
+  <link rel=”stylesheet” href=”styles.css”>
+</head>
+<body>
+  <header>
+    <h1>Apply for a Loan</h1>
+    <nav>
+      <a href=”index.html”>Home</a>
+      <a href=”borrower-form.html”>Apply Now</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action=”submit-loan-application” method=”post”>
+      <label for=”name”>Full Name:</label>
+      <input type=”text” id=”name” name=”name” required>
+
+      <label for=”email”>Email:</label>
+      <input type=”email” id=”email” name=”email” required>
+
+      <label for=”phone”>Phone Number:</label>
+      <input type=”tel” id=”phone” name=”phone” required>
+
+      <label for=”amount”>Loan Amount:</label>
+      <input type=”number” id=”amount” name=”amount” required>
+
+      <label for=”loan-type”>Loan Type:</label>
+      <select id=”loan-type” name=”loan_type” required>
+        <option value=”personal”>Personal Loan</option>
+        <option value=”business”>Business Loan</option>
+        <option value=”emergency”>Emergency Loan</option>
+      </select>
+
+      <label for=”income”>Monthly Income:</label>
+      <input type=”number” id=”income” name=”income” required>
+
+      <label for=”collateral”>Collateral (if any):</label>
+      <input type=”text” id=”collateral” name=”collateral”>
+
+      <button type=”submit”>Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Muchuks Concept. All rights reserved.</p>
+  </footer>
+</body>
